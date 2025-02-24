@@ -6,7 +6,7 @@
 #    By: dmendoza <dmendoza@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/19 13:10:58 by dmendoza          #+#    #+#              #
-#    Updated: 2025/02/20 12:56:40 by dmendoza         ###   ########.fr        #
+#    Updated: 2025/02/24 17:15:17 by dmendoza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ LIBFT	=	./lib/libft
 LIBS	=	$(LIBMLX)/build/libmlx42.a -ldl -lglfw -pthread -lm $(LIBFT)/libft.a
 
 SRC_DIR =	src/
-SRCS	=	$(SRC_DIR)main.c
+SRCS	=	$(SRC_DIR)main.c $(SRC_DIR)parse_input.c
 
 OBJ_DIR =	obj/
 OBJS	=	$(SRCS:$(SRC_DIR)%.c=$(OBJ_DIR)%.o)
@@ -27,7 +27,7 @@ OBJS	=	$(SRCS:$(SRC_DIR)%.c=$(OBJ_DIR)%.o)
 INCLUDE =	include/fdf.h Makefile
 
 CC	=	cc
-CFLAGS	=	-Wall -Wextra -Werror -Wunreachable-code -Ofast -I./libft \
+CFLAGS	=	-g -Wall -Wextra -Werror -Wunreachable-code -Ofast -I./libft \
 		-I./include -I$(LIBMLX)/include -I$(LIBFT)
 RM	=	rm -f
 
