@@ -6,7 +6,7 @@
 /*   By: dmendoza <dmendoza@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 16:58:03 by dmendoza          #+#    #+#             */
-/*   Updated: 2025/02/24 17:09:50 by dmendoza         ###   ########.fr       */
+/*   Updated: 2025/02/25 15:06:08 by dmendoza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	print_map(t_map *map)
 	int	i;
 	int	j;
 
-	if(!map)
+	if (!map)
 		return ;
 	printf("Map dimensions: %d x %d\n", map->width, map->height);
 	i = -1;
@@ -47,7 +47,6 @@ void	print_map(t_map *map)
 			printf("%3d", map->map[i][j]);
 		printf("\n");
 	}
-
 }
 
 int	main(int argc, char **argv)
@@ -56,7 +55,6 @@ int	main(int argc, char **argv)
 
 	if (argc != 2)
 		return (1);
-
 	map = parse_fdf(argv[1]);
 	if (!map)
 		return (1);
