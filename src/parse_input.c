@@ -6,11 +6,24 @@
 /*   By: dmendoza <dmendoza@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 17:25:07 by dmendoza          #+#    #+#             */
-/*   Updated: 2025/02/24 17:47:31 by dmendoza         ###   ########.fr       */
+/*   Updated: 2025/02/25 12:20:38 by dmendoza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
+
+int	*get_line_values(char *line, int *width)
+{
+	int	*values;
+	char	*token;
+	int	i;
+	int	count;
+	char	*tmp_line;
+
+	token 
+
+
+}
 
 t_map	*parse_fdf(char *filename)
 {
@@ -67,6 +80,7 @@ t_map	*parse_fdf(char *filename)
 					free(map->map[i]);
 				free(map->map);
 				free(map);
+				free(line);
 				fclose(file);
 				return (NULL);
 			}
