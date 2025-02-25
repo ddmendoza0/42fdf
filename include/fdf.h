@@ -6,7 +6,7 @@
 /*   By: dmendoza <dmendoza@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 12:01:33 by dmendoza          #+#    #+#             */
-/*   Updated: 2025/02/25 15:01:06 by dmendoza         ###   ########.fr       */
+/*   Updated: 2025/02/25 16:14:03 by dmendoza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,6 @@
 
 # include "libft.h"
 # include "MLX42/MLX42.h"
-# include <stdlib.h>
-# include <fcntl.h>
-# include <string.h>
-# include <unistd.h>
 # include <stdio.h>
 
 typedef struct s_map

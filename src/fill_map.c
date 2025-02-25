@@ -6,7 +6,7 @@
 /*   By: dmendoza <dmendoza@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 14:32:22 by dmendoza          #+#    #+#             */
-/*   Updated: 2025/02/25 15:05:10 by dmendoza         ###   ########.fr       */
+/*   Updated: 2025/02/25 16:10:57 by dmendoza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static int	count_values(char *line)
 
 	count = 0;
 	tmp_line = ft_strdup(line);
-	token = ft_strtok(NULL, " \t\n");
+	token = ft_strtok(tmp_line, " \t\n");
 	while (token)
 	{
 		count++;
