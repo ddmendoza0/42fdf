@@ -6,7 +6,7 @@
 /*   By: dmendoza <dmendoza@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 16:58:03 by dmendoza          #+#    #+#             */
-/*   Updated: 2025/02/25 15:06:08 by dmendoza         ###   ########.fr       */
+/*   Updated: 2025/02/26 15:04:10 by dmendoza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ int	main(int argc, char **argv)
 	if (!map)
 		return (1);
 	print_map(map);
+	start_rendering(map);
 	free_map(map);
 	return (0);
 }
