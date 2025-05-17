@@ -6,7 +6,7 @@
 #    By: dmendoza <dmendoza@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/19 13:10:58 by dmendoza          #+#    #+#              #
-#    Updated: 2025/02/26 15:05:03 by dmendoza         ###   ########.fr        #
+#    Updated: 2025/05/17 15:19:07 by dmendoza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ LIBFT	=	./lib/libft
 LIBS	=	$(LIBMLX)/build/libmlx42.a -ldl -lglfw -pthread -lm $(LIBFT)/libft.a
 
 SRC_DIR =	src/
-SRCS	=	$(SRC_DIR)main.c $(SRC_DIR)parse_input.c $(SRC_DIR)fill_map.c \
+SRCS	=	$(SRC_DIR)fdf.c $(SRC_DIR)parse_input.c $(SRC_DIR)fill_map.c \
 		$(SRC_DIR)render_map.c
 
 OBJ_DIR =	obj/

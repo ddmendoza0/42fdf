@@ -6,7 +6,7 @@
 /*   By: dmendoza <dmendoza@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 16:58:03 by dmendoza          #+#    #+#             */
-/*   Updated: 2025/02/26 15:04:10 by dmendoza         ###   ########.fr       */
+/*   Updated: 2025/05/17 15:16:15 by dmendoza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	free_map(t_map *map)
 	}
 	free(map);
 }
-
+/*
 void	print_map(t_map *map)
 {
 	int	i;
@@ -47,7 +47,7 @@ void	print_map(t_map *map)
 			printf("%3d", map->map[i][j]);
 		printf("\n");
 	}
-}
+}*/
 
 int	main(int argc, char **argv)
 {
@@ -58,7 +58,6 @@ int	main(int argc, char **argv)
 	map = parse_fdf(argv[1]);
 	if (!map)
 		return (1);
-	print_map(map);
 	start_rendering(map);
 	free_map(map);
 	return (0);
